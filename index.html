@@ -75,7 +75,9 @@
         console.log(document.getElementById("t").style);
         document.getElementById("t").style.setProperty("background-color","#cf00cf")
         sleep(250).then(() => {
-        document.getElementById("t").style.setProperty("background-color","#FF00FF");});
+          document.getElementById("t").style.setProperty("background-color","#df00df");
+        sleep(250).then(() => {
+        document.getElementById("t").style.setProperty("background-color","#FF00FF");});});
         // bodyStyles.setProperty('background-color', 'white');
       };
 
@@ -83,10 +85,13 @@
         //true
         console.log("SET TRUE")
         console.log(document.getElementById("t").style)
-        document.getElementById("t").style.setProperty("background-color","#cf00cf")
+        document.getElementById("t").style.setProperty("background-color","#ef00ef")
+        sleep(250).then(() => {
+        document.getElementById("t").style.setProperty("background-color","#df00df")
         sleep(250).then(() => {
         document.getElementById("t").style.setProperty("background-color","#38214b");
         });
+       });
       }; 
     });
 
